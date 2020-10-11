@@ -43,7 +43,7 @@
 		- So we need to indicate the overrides with virtual properties on the base class.
 		- e.g.: public override int Height;
 	
-	4. 5. Interface Segregation Principle:
+	4. Interface Segregation Principle:
 
 
 - Builder:
@@ -63,3 +63,5 @@
 - Builder:
 	- e.g.: So we define a class called HtmlElement. And then we create an HtmlBuilder as an API.
 	- Fluent builder: Chaining methods together.
+	- Fluent builder(s) with inheritance. You are not allowed the containing type as the return type.
+	- e.g.: A derived class needs to propogate its derived type via its base type. This is difficult and requires generic classes.

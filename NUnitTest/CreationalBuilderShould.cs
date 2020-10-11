@@ -1,4 +1,5 @@
 ﻿using Creational.Builder.Builders;
+using Creational.Builder.Models;
 using NUnit.Framework;
 using NUnitTest.Extensions;
 
@@ -21,7 +22,7 @@ namespace NUnitTest
         }
 
         [Test()]
-        public void Build()
+        public void BuildHtml()
         {
             htmlBuilder.AddChild("li", "Hello");
             htmlBuilder.AddChild("li", "World");
@@ -32,13 +33,26 @@ namespace NUnitTest
         }
 
         [Test()]
-        public void BuildFluent()
+        public void BuildFluentHtml()
         {
             fluentHtmlBuilder.AddChild("li", "Hello").AddChild("li", "World");
 
             Assert.AreEqual(
                 "<ul><li>Hello</li><li>World</li></ul>",
                 fluentHtmlBuilder.ToString().RemoveWhitespace());
+        }
+
+        [Test()]
+        public void BuildFluentPerson()
+        {
+            string name = "ODonnchadha";
+            string position = "Janitor";
+
+            var person = Person.New.IsCalled(name).AndWorksAs(position).Build();
+
+            Assert.IsNotNull(person);
+            Assert.AreEqual(name, person.Name);
+            Assert.AreEqual(position, person.Position);
         }
     }
 }
