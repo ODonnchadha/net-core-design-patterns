@@ -93,3 +93,10 @@
 	- Fluent builder: Chaining methods together.
 	- Fluent builder(s) with inheritance. You are not allowed the containing type as the return type.
 	- e.g.: A derived class needs to propogate its derived type via its base type. This is difficult and requires generic classes.
+	- Faceted Builder: Building an address and employment information in a fluent manner. We want several builder facades.
+	- e.g.: A person builder will maintain a reference to the sub-builders. The person builder conyains a *reference* to the person being built.
+- Summary:
+	- A builder is a seperate component for building an object.
+	- It can either give builder a constructor or return it via a static function.
+	- To make a builder fluent, return this.
+	- Differet facets of an object can be built with different builders working in tandem via a base class.

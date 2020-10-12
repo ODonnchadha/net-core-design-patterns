@@ -54,5 +54,31 @@ namespace NUnitTest
             Assert.AreEqual(name, person.Name);
             Assert.AreEqual(position, person.Position);
         }
+
+        [Test()]
+        public void FacetedBuilder()
+        {
+            // Address
+            string address = "200 Duluth Avenue";
+            string postalCode = "55803";
+            string city = "Duluth";
+
+            // Employment
+            string works = "Fly By Night, Inc.";
+            string position = "Janitor";
+            int income = 3000;
+
+            Creational.Builder.FacetedBuilder.Builders.PersonBuilder builder 
+                = new Creational.Builder.FacetedBuilder.Builders.PersonBuilder();
+
+            Creational.Builder.FacetedBuilder.Models.Person person =
+                builder
+                .Living.At(address).WithPostalCode(postalCode).In(city)
+                .Works.At(works).AsA(position).Earning(income);
+
+            Assert.IsNotNull(person);
+            Assert.AreEqual(postalCode, person.PostalCode);
+            Assert.AreEqual(income, person.AnnualIncome);
+        }
     }
 }
