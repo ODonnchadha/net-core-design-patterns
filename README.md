@@ -59,7 +59,7 @@
 			}
 		```
 	
-	Summary:
+	- Summary:
 		- Single Responsibility Principle:
 			1. A class should have only one reason to change.
 			2. Seperation of concerns - different classes handling ddifferent, independ tasks/problems.
@@ -100,3 +100,6 @@
 	- It can either give builder a constructor or return it via a static function.
 	- To make a builder fluent, return this.
 	- Differet facets of an object can be built with different builders working in tandem via a base class.
+
+- Factory:
+	-
