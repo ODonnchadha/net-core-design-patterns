@@ -48,7 +48,7 @@ namespace NUnitTest
             string name = "ODonnchadha";
             string position = "Janitor";
 
-            var person = Person.New.IsCalled(name).AndWorksAs(position).Build();
+            var person = Person.Create.IsCalled(name).AndWorksAs(position).Build();
 
             Assert.IsNotNull(person);
             Assert.AreEqual(name, person.Name);

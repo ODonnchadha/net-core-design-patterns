@@ -44,6 +44,34 @@
 		- e.g.: public override int Height;
 	
 	4. Interface Segregation Principle:
+		- Stop implementing interfaces that are too large.
+		- e.g.: You have an interface for a multi-functional printer: Print. Scan. Fax.
+
+	5. Dependency Inversion Principle:
+		- Allow high-level module to access some of the internals of the low-level module. System.ValueTuple.
+		- e.g.: public properties and filtering. We end up accessing a low-lovel portion of the low-level module.
+		- In practice, the low-level cannot change its mind. e.g.: Tuple versus Dictionary.
+		- Instead, define an interface as the access control for data access.
+		```csharp
+			public interface IRelationship
+			{
+				IEnumerable<Person> FindAllChildrenOf(string name);
+			}
+		```
+	
+	Summary:
+		- Single Responsibility Principle:
+			1. A class should have only one reason to change.
+			2. Seperation of concerns - different classes handling ddifferent, independ tasks/problems.
+		- Open-Closed Principle:
+			1. Classes should be open for extension but closed for modification. e.g.: Specification pattern.
+		- Liskov Substition Pattern:
+			1. You should be able to subscribe a base type for a subtype.
+		- Interface Segretion Principle:
+			1. Don't put too much into an interface; split it up into seperate interfaces.
+			2. YAGNI: You ain't going to need it.
+		- Dependency Inversion Principle:
+			1. High-level modules should not depend upon low-level modules. Use abstractions.
 
 
 - Builder:
@@ -60,7 +88,7 @@
 		StringBuilder.Append("Paragraph");
 		StringBuilder.Append("</p>");
 	```
-- Builder:
+- The Pattern:
 	- e.g.: So we define a class called HtmlElement. And then we create an HtmlBuilder as an API.
 	- Fluent builder: Chaining methods together.
 	- Fluent builder(s) with inheritance. You are not allowed the containing type as the return type.

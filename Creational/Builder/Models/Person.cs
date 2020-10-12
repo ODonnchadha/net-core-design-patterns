@@ -6,7 +6,7 @@ namespace Creational.Builder.Models
     {
         public string Name;
         public string Position;
-        public static Builder New => new Builder();
+        public static Builder Create => new Builder();
         public class Builder: PersonJobBuilder<Builder> { }
     }
 }
