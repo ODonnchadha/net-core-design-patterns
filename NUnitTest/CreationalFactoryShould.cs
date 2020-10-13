@@ -66,5 +66,19 @@ namespace NUnitTest
             Assert.AreEqual($"{amount} Tea", 
                 manager.Get(BeverageManager.Drinks.Tea, amount).Consume());
         }
+
+        [Test()]
+        public void AbstractBeverageManagerOpenClosedFactory()
+        {
+            var amount = 40;
+            var manager = new Creational.Factory.OpenClosed.Managers.BeverageManager { };
+            var beverage = manager.Get(0, amount);
+
+            Assert.IsNotNull(beverage);
+            Assert.AreEqual($"{amount} {beverage.GetType().Name}", beverage.Consume());
+            Assert.AreEqual($"{amount} Tea", manager.Get(1, amount).Consume());
+            Assert.AreEqual($"{amount} NoOp", manager.Get(-1, amount).Consume());
+            Assert.AreEqual($"{amount} NoOp", manager.Get(100, amount).Consume());
+        }
     }
 }
