@@ -102,4 +102,18 @@
 	- Differet facets of an object can be built with different builders working in tandem via a base class.
 
 - Factory:
-	-
+	- Factory Method and Abstract Factory.
+	- Object creation logic becomes too convoluted.
+	- Constructor is not descriptive:
+		1. The name is mandated by name of containing type.
+		2. Cannot overload with same sets or arguments with different names.
+		3. Can turn into 'optional parameter hell.'
+	- Object creation (non-piecewise, unlike builder) can be outsourced to:
+		1. A seperate function (Factory Method.)
+		2. That may exist in a seperate class (Factory.)
+		3. Can create hiearchy of factories with Abstract Factory.
+	- Factory: A component responsible soley for the wholesale (not piecewise) creation of objects.
+	- e.g.: Point example. Introducing different types to pass to a constructor. And a switch statement.
+	- Abstract factory provides abstract objects. e.g. With method, abstract factory returned concrete point(s).
+	- We will return abstract classes or interfaces. We will return two different objects with their own factories.
+	- Tea and coffee. We will not return type T but an IHotDrink interface.
