@@ -123,3 +123,25 @@
 		- A factory can take care of object creation.
 		- A factory can be external or reside insode the object as an inner class.
 		- Heirarchies of factories can be used to create related objects.
+
+- Prototype:
+	- When it's easier to copy an existing object to fully initialize a new one.
+	- Motivation: Complicated objects are not designed from scratch.
+		1. Reiterate existing designs.
+	- An existing, partially or fully constructed, design is a prototype.
+	- We make a copy, clone, of the prototype and customize it.
+		1. Required 'deep copy' support.
+	- Make the cloning convenient.
+	- A partially or fully initiazed object that you copy (clone) and make use of.
+	- Be careful that you are not 'cloning' by simply copying the reference. e.g.: Both Names[0] are now "Y."
+	```csharp
+		var x = new Person(new[] { "X", "XYZ" }, new Address("Duluth Avenue", 40));
+        var y = x;
+        y.Names[0] = "Y";
+	```
+	- *NOTE:* ICloneable is bad. The ieda is that the .NET framework offers up this interface.
+	- The problem? Is it deep cloning or simply shallow cloning? Be careful about reference cloning. ICloneable returns an object... so, before generics. So cast to type.
+	- ICloneable is a shallow copy. We copied a memory pointer with Address until we add ICloneable to the nested Address as well. Also, the Names[] offers only shallow copy.
+
+	- One approach: Use a copy constructor. A C++ term.
+	- Another: Create a DeepCopy() method via an interface<T>.
