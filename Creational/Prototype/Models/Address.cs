@@ -1,12 +1,15 @@
 ﻿using Creational.Prototype.Interfaces;
+using System;
 
 namespace Creational.Prototype.Models
 {
+    [Serializable()]
     public class Address : IPrototype<Address>
     {
         public string StreetName;
         public int HouseNumber;
 
+        public Address() { }
         public Address(string streetName, int houseNumber)
         {
             this.StreetName = streetName; this.HouseNumber = houseNumber;

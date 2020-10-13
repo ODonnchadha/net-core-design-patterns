@@ -145,3 +145,11 @@
 
 	- One approach: Use a copy constructor. A C++ term.
 	- Another: Create a DeepCopy() method via an interface<T>.
+	- A serializer will obtain the entire tree. This is a better example of real-word deep copy. We stay away from interfaces in order *not* to mrak all of our (nested) classes.
+	- Instead, build an extension method. And we'll need [Serializable()] decorators for binary serialization.
+	- But not for XmlSerialization. However, we will need parameterless constructors for XML serialization.
+	- Summary:
+		- To implement a prototype, partially construct an onject and store it somewhere.
+		- Clone the prototype:
+			1. Implement your own functionality; or
+			2. Serialize and deserialize. Guarenteed to traverse the entire object graph.
