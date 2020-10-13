@@ -116,4 +116,10 @@
 	- e.g.: Point example. Introducing different types to pass to a constructor. And a switch statement.
 	- Abstract factory provides abstract objects. e.g. With method, abstract factory returned concrete point(s).
 	- We will return abstract classes or interfaces. We will return two different objects with their own factories.
-	- Tea and coffee. We will not return type T but an IHotDrink interface.
+	- Tea and coffee. We will not return type T but an IHotDrink interface. But the associated enum breaks the open/closed principle.
+	- So we scape the pbjects in a different manner and then use an int to obtain the provided factory. With OutOfIndex we return a NoOp IBeverage.
+	- Summary:
+		- A factory method is a static method that creates abjects.
+		- A factory can take care of object creation.
+		- A factory can be external or reside insode the object as an inner class.
+		- Heirarchies of factories can be used to create related objects.
