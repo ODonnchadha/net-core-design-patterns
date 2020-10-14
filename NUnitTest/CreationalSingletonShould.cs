@@ -90,12 +90,15 @@ namespace NUnitTest
             s1.Age = 40;
             s1.Name = "Daniel";
 
-            var s2 = new SingletonMonostate { };
-            s2.Age = 20;
-            s2.Name = "Patrick";
+            int age = 20;
+            string name = "Patrick";
 
-            Assert.AreEqual(s1.Age, 20);
-            Assert.AreEqual(s1.Name, "Patrick");
+            var s2 = new SingletonMonostate { };
+            s2.Age = age;
+            s2.Name = name;
+
+            Assert.AreEqual(s1.Age, age);
+            Assert.AreEqual(s1.Name, name);
         }
     }
 }
