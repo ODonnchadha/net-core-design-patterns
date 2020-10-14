@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Creational.Singleton
+namespace Creational.Singleton.Databases
 {
     public class SingletonDatabase : IDatabase
     {
@@ -27,7 +27,7 @@ namespace Creational.Singleton
             //);
 
             this.capitals = File.ReadAllLines(
-                @"C:\ODonnchadha\net-core-design-patterns\Creational\Singleton\capitals.txt").Batch(2).ToDictionary(
+                @"C:\ODonnchadha\net-core-design-patterns\Creational\Singleton\Databases\capitals.txt").Batch(2).ToDictionary(
                 list => list.ElementAt(0).Trim(),
                 list => int.Parse(list.ElementAt(1))
             );

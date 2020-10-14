@@ -1,6 +1,10 @@
-﻿using Creational.Singleton;
+﻿using Autofac;
+using Creational.Singleton;
+using Creational.Singleton.Databases;
+using Creational.Singleton.Interfaces;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 
 namespace NUnitTest
 {
@@ -45,6 +49,53 @@ namespace NUnitTest
             int totalPopulation = finder.GetTotalPopulation(new List<string>() { "Tokyo", NEW_YORK, "Mexico City" });
 
             Assert.AreEqual(68400000, totalPopulation);
+        }
+
+        [Test()]
+        public void GetTotalPopulationMock()
+        {
+            SingletonRecordFinderConfigurable finder = new SingletonRecordFinderConfigurable(new MockDatabase { });
+
+            int totalPopulation = finder.GetTotalPopulation(new List<string>() { "Alpha", "Beta", "Gamma" });
+
+            Assert.AreEqual(6, totalPopulation);
+        }
+
+        [Test()]
+        public void GetTotalPopulationMockDependencyInjection()
+        {
+            var builder = new ContainerBuilder { };
+
+            builder.RegisterType<MockDatabase>().As<IDatabase>().SingleInstance();
+            builder.RegisterType<SingletonRecordFinderConfigurable>();
+
+            using(var container = builder.Build())
+            {
+                var finder = container.Resolve<SingletonRecordFinderConfigurable>();
+                int totalPopulation = finder.GetTotalPopulation(new List<string>() { "Alpha", "Beta", "Gamma" });
+
+                Assert.AreEqual(6, totalPopulation);
+
+                var instance1 = container.Resolve<IDatabase>();
+                var instance2 = container.Resolve<IDatabase>();
+
+                Assert.That(instance1, Is.SameAs(instance2));
+            }
+        }
+
+        [Test()]
+        public void SingletonMonostate()
+        {
+            var s1 = new SingletonMonostate { };
+            s1.Age = 40;
+            s1.Name = "Daniel";
+
+            var s2 = new SingletonMonostate { };
+            s2.Age = 20;
+            s2.Name = "Patrick";
+
+            Assert.AreEqual(s1.Age, 20);
+            Assert.AreEqual(s1.Name, "Patrick");
         }
     }
 }

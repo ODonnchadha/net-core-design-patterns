@@ -170,3 +170,12 @@
             totalPopulation += SingletonDatabase.Instance.GetPolulation(name);
         }
 	```
+	- So singleton with mocking and unit testing.
+	- A static class with static members is terrible because it has not constructors. There is no dependency injection.
+	- The Monostate pattern. e.g.: There can only be one CEO at the company at a given time. So static state exposed in a non-static manner.
+	- We end up referencing the same data regardless of how many "different" objects that we create.
+	- Summary:
+		1. Making a 'safe' singleton is easy: construct a static Lazy<T> and return its value.
+		2. Singletons are difficult to test.
+		3. Instead of directly using a singleton, consider depending on an abstraction.
+		4. Consider defining singleton lifetime in a DI container.
