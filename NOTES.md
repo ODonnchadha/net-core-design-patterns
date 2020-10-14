@@ -153,3 +153,20 @@
 		- Clone the prototype:
 			1. Implement your own functionality; or
 			2. Serialize and deserialize. Guarenteed to traverse the entire object graph.
+
+- Singleton:
+	- The design pattern everyone loves to hate... but is it really that bad?
+	- Motivation: It does make sense to have only one instance in the system. e.g.: a database loaded completely into memory. Also, object factory. A factory should not have any state.
+	- e.g.: a lazy-loaded, thread-safe component. The argument is that we do not need multiple instances of the resourse. We want to provent anyone from making more than one instance.
+	- 1. Make the constructor private. Serve up an instance. Make the thing lazy-loading using Lazy<T>. Note: Use a Lambda to new up the resource.
+	```csharp
+		private static Lazy<T> instance = new Lazy<T>(() => new T());
+		public static T Instance => instance.Value;
+	```
+	- Beware unit testing of a wrapper class with a hard-coded reference to the static database.
+	```csharp
+    	foreach (var name in names)
+        {
+            totalPopulation += SingletonDatabase.Instance.GetPolulation(name);
+        }
+	```
