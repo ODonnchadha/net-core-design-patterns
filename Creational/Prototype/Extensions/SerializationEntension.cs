@@ -2,7 +2,7 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
-namespace Creational.Prototype.Extensions
+namespace Pattern.Creational.Prototype.Extensions
 {
     public static class SerializationEntension
     {

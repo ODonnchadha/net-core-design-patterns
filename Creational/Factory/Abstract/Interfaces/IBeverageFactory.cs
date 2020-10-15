@@ -1,4 +1,4 @@
-﻿namespace Creational.Factory.Abstract.Interfaces
+﻿namespace Pattern.Creational.Factory.Abstract.Interfaces
 {
     public interface IBeverageFactory
     {

@@ -1,7 +1,7 @@
-﻿using Creational.Singleton.Interfaces;
+﻿using Pattern.Creational.Singleton.Interfaces;
 using System.Collections.Generic;
 
-namespace Creational.Singleton.Databases
+namespace Pattern.Creational.Singleton.Databases
 {
     public class MockDatabase : IDatabase
     {

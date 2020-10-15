@@ -1,7 +1,7 @@
-﻿using Creational.Factory.Method.Models;
+﻿using Pattern.Creational.Factory.Method.Models;
 using System;
 
-namespace Creational.Factory.Method
+namespace Pattern.Creational.Factory.Method
 {
     public static class PointFactory
     {

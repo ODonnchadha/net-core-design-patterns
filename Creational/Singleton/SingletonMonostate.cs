@@ -1,4 +1,4 @@
-﻿namespace Creational.Singleton
+﻿namespace Pattern.Creational.Singleton
 {
     public class SingletonMonostate
     {

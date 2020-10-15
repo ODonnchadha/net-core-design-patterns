@@ -1,7 +1,7 @@
-﻿using Creational.Singleton.Databases;
+﻿using Pattern.Creational.Singleton.Databases;
 using System.Collections.Generic;
 
-namespace Creational.Singleton
+namespace Pattern.Creational.Singleton
 {
     public class SingletonRecordFinder
     {

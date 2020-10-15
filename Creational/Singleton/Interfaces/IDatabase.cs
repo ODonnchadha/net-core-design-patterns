@@ -1,4 +1,4 @@
-﻿namespace Creational.Singleton.Interfaces
+﻿namespace Pattern.Creational.Singleton.Interfaces
 {
     public interface IDatabase
     {

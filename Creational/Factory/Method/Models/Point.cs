@@ -1,4 +1,4 @@
-﻿namespace Creational.Factory.Method.Models
+﻿namespace Pattern.Creational.Factory.Method.Models
 {
     public class Point
     {

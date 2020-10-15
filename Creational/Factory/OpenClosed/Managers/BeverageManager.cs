@@ -1,9 +1,9 @@
-﻿using Creational.Factory.Abstract.Interfaces;
-using Creational.Factory.OpenClosed.Models;
+﻿using Pattern.Creational.Factory.Abstract.Interfaces;
+using Pattern.Creational.Factory.OpenClosed.Models;
 using System;
 using System.Collections.Generic;
 
-namespace Creational.Factory.OpenClosed.Managers
+namespace Pattern.Creational.Factory.OpenClosed.Managers
 {
     public class BeverageManager
     {

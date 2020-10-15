@@ -1,6 +1,6 @@
-﻿using Creational.Builder.Abstractions;
+﻿using Pattern.Creational.Builder.Abstractions;
 
-namespace Creational.Builder.Builders
+namespace Pattern.Creational.Builder.Builders
 {
     public class PersonInformationBuilder<SELF> : PersonBuilder where SELF : PersonInformationBuilder<SELF>
     {

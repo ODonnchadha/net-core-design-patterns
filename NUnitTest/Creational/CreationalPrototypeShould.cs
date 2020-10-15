@@ -1,8 +1,8 @@
-﻿using Creational.Prototype.Extensions;
-using Creational.Prototype.Models;
+﻿using Pattern.Creational.Prototype.Extensions;
+using Pattern.Creational.Prototype.Models;
 using NUnit.Framework;
 
-namespace NUnitTest
+namespace Creational.NUnitTest
 {
     public class CreationalPrototypeShould
     {

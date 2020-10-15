@@ -1,6 +1,6 @@
-﻿using Creational.Builder.Builders;
+﻿using Pattern.Creational.Builder.Builders;
 
-namespace Creational.Builder.Models
+namespace Pattern.Creational.Builder.Models
 {
     public class Person
     {

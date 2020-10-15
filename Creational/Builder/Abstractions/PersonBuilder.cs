@@ -1,6 +1,6 @@
-﻿using Creational.Builder.Models;
+﻿using Pattern.Creational.Builder.Models;
 
-namespace Creational.Builder.Abstractions
+namespace Pattern.Creational.Builder.Abstractions
 {
     public abstract class PersonBuilder
     {

@@ -1,4 +1,4 @@
-﻿namespace Creational.Builder.Builders
+﻿namespace Pattern.Creational.Builder.Builders
 {
     public class PersonJobBuilder<SELF>: PersonInformationBuilder<PersonJobBuilder<SELF>> where SELF: PersonJobBuilder<SELF>
     {

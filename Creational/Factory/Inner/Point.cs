@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creational.Factory.Inner
+namespace Pattern.Creational.Factory.Inner
 {
     public class Point
     {

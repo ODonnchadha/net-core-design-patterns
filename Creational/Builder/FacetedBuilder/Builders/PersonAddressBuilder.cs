@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creational.Builder.FacetedBuilder.Builders
+namespace Pattern.Creational.Builder.FacetedBuilder.Builders
 {
     public class PersonAddressBuilder : FacetedBuilder.Builders.PersonBuilder
     {

@@ -1,7 +1,7 @@
-﻿using Creational.Prototype.Interfaces;
+﻿using Pattern.Creational.Prototype.Interfaces;
 using System;
 
-namespace Creational.Prototype.Models
+namespace Pattern.Creational.Prototype.Models
 {
     [Serializable()]
     public class Address : IPrototype<Address>

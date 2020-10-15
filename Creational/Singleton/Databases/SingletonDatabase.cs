@@ -1,11 +1,11 @@
-﻿using Creational.Singleton.Interfaces;
+﻿using Pattern.Creational.Singleton.Interfaces;
 using MoreLinq;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Creational.Singleton.Databases
+namespace Pattern.Creational.Singleton.Databases
 {
     public class SingletonDatabase : IDatabase
     {

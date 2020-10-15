@@ -1,4 +1,4 @@
-﻿namespace Creational.Builder.FacetedBuilder.Models
+﻿namespace Pattern.Creational.Builder.FacetedBuilder.Models
 {
     public class Person
     {

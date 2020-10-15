@@ -1,9 +1,9 @@
-﻿using Creational.Factory.Abstract.Managers;
-using Creational.Factory.Inner;
-using Creational.Factory.Method;
+﻿using Pattern.Creational.Factory.Abstract.Managers;
+using Pattern.Creational.Factory.Inner;
+using Pattern.Creational.Factory.Method;
 using NUnit.Framework;
 
-namespace NUnitTest
+namespace Creational.NUnitTest
 {
     public class CreationalFactoryShould
     {
@@ -71,7 +71,7 @@ namespace NUnitTest
         public void AbstractBeverageManagerOpenClosedFactory()
         {
             var amount = 40;
-            var manager = new Creational.Factory.OpenClosed.Managers.BeverageManager { };
+            var manager = new Pattern.Creational.Factory.OpenClosed.Managers.BeverageManager { };
             var beverage = manager.Get(0, amount);
 
             Assert.IsNotNull(beverage);

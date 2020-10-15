@@ -1,6 +1,6 @@
-﻿using Creational.Factory.Abstract.Interfaces;
+﻿using Pattern.Creational.Factory.Abstract.Interfaces;
 
-namespace Creational.Factory.OpenClosed.Models
+namespace Pattern.Creational.Factory.OpenClosed.Models
 {
     public class NoOp : IBeverage
     {

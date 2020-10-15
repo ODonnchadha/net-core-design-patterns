@@ -1,4 +1,4 @@
-﻿namespace Creational.Builder.FacetedBuilder.Builders
+﻿namespace Pattern.Creational.Builder.FacetedBuilder.Builders
 {
     public class PersonJobBuilder: FacetedBuilder.Builders.PersonBuilder
     {

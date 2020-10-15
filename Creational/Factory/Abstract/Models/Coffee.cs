@@ -1,6 +1,6 @@
-﻿using Creational.Factory.Abstract.Interfaces;
+﻿using Pattern.Creational.Factory.Abstract.Interfaces;
 
-namespace Creational.Factory.Abstract.Models
+namespace Pattern.Creational.Factory.Abstract.Models
 {
     internal class Coffee : IBeverage
     {

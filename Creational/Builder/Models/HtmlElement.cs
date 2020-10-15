@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace Creational.Builder.Models
+namespace Pattern.Creational.Builder.Models
 {
     public class HtmlElement
     {

@@ -1,6 +1,6 @@
-﻿using Creational.Builder.Models;
+﻿using Pattern.Creational.Builder.Models;
 
-namespace Creational.Builder.Builders
+namespace Pattern.Creational.Builder.Builders
 {
     public class HtmlBuilder
     {

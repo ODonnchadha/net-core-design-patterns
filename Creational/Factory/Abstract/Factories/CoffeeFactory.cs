@@ -1,7 +1,7 @@
-﻿using Creational.Factory.Abstract.Interfaces;
-using Creational.Factory.Abstract.Models;
+﻿using Pattern.Creational.Factory.Abstract.Interfaces;
+using Pattern.Creational.Factory.Abstract.Models;
 
-namespace Creational.Factory.Abstract.Factories
+namespace Pattern.Creational.Factory.Abstract.Factories
 {
     public class CoffeeFactory : IBeverageFactory
     {

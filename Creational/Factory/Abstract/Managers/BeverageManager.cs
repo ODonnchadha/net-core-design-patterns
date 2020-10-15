@@ -1,8 +1,8 @@
-﻿using Creational.Factory.Abstract.Interfaces;
+﻿using Pattern.Creational.Factory.Abstract.Interfaces;
 using System;
 using System.Collections.Generic;
 
-namespace Creational.Factory.Abstract.Managers
+namespace Pattern.Creational.Factory.Abstract.Managers
 {
     public class BeverageManager
     {
@@ -16,7 +16,7 @@ namespace Creational.Factory.Abstract.Managers
             foreach(Drinks drink in Enum.GetValues(typeof(Drinks)))
             {
                 var factory = (IBeverageFactory)Activator
-                    .CreateInstance(Type.GetType("Creational.Factory.Abstract.Factories."
+                    .CreateInstance(Type.GetType("Pattern.Creational.Factory.Abstract.Factories."
                     + Enum.GetName(typeof(Drinks), drink) + "Factory"));
 
                 factories.Add(drink, factory);
