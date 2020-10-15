@@ -6,7 +6,7 @@ using Pattern.Structural.Adapter.Managers;
 using Pattern.Structural.Adapter.Models;
 using System.Collections.Generic;
 
-namespace Structural.NUnitTest
+namespace NUnitTest.Structural
 {
     public class StructuralAdapterShould
     {

@@ -2,7 +2,7 @@
 using Pattern.Creational.Prototype.Models;
 using NUnit.Framework;
 
-namespace Creational.NUnitTest
+namespace NUnitTest.Creational
 {
     public class CreationalPrototypeShould
     {

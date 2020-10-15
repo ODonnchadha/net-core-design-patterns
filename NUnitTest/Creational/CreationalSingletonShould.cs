@@ -5,7 +5,7 @@ using Pattern.Creational.Singleton.Databases;
 using Pattern.Creational.Singleton.Interfaces;
 using System.Collections.Generic;
 
-namespace Creational.NUnitTest
+namespace NUnitTest.Creational
 {
     public class CreationalSingletonShould
     {

@@ -196,3 +196,18 @@
 		2. Determine the API you have and the API you need.
 		3. Create a component which aggregates (has a reference to, ...) the adaptee.
 		4. Intermediate representations can pile up; use caching and other optimizations.
+
+- Bridge:
+	- Connecting components together through abstractions.
+	- Motivation: The bridge prevents a 'Cartesian product' complexity explosion.
+	- Example:
+		1. Base class ThreadSAcheduler.
+		2. Can be preemptive or cooperative.
+		3. Can run on Windows or Unix.
+		4. You'll end up with a 2x2 scenario: WindowsPTS, UnixPTS, WindowsCTS, UnixCTS.
+	- Bridge pattern avoid this entity explosion.
+	- Bridge is: A mechanism that decouples an interface (hierarchy) from an implementation (hiererchy.)
+	- Summary:
+		1. Decouple abstraction from implementation.
+		2. Both can exist as hierarchies.
+		3. A stronger form of encapsulation. Less state explosion.

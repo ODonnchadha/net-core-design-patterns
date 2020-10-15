@@ -3,7 +3,7 @@ using Pattern.Creational.Builder.Models;
 using NUnit.Framework;
 using NUnitTest.Extensions;
 
-namespace Creational.NUnitTest
+namespace NUnitTest.Creational
 {
     public class CreationalBuilderShould
     {

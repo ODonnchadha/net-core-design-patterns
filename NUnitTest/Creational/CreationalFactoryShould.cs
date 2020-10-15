@@ -3,7 +3,7 @@ using Pattern.Creational.Factory.Inner;
 using Pattern.Creational.Factory.Method;
 using NUnit.Framework;
 
-namespace Creational.NUnitTest
+namespace NUnitTest.Creational
 {
     public class CreationalFactoryShould
     {

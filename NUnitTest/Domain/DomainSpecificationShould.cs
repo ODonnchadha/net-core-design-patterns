@@ -4,7 +4,7 @@ using Pattern.Domain.Specification.Models;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace Domain.NUnitTest
+namespace NUnitTest.Domain
 {
     public class DomainSpecificationShould
     {
