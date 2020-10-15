@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Domain.Specification.Interfaces
+namespace Pattern.Domain.Specification.Interfaces
 {
     public interface IFilter<T>
     {

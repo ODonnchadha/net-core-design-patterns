@@ -1,8 +1,8 @@
-﻿using Domain.Specification.Interfaces;
-using Domain.Specification.Models;
+﻿using Pattern.Domain.Specification.Interfaces;
+using Pattern.Domain.Specification.Models;
 using System.Collections.Generic;
 
-namespace Domain.Specification.Filters
+namespace Pattern.Domain.Specification.Filters
 {
     public class ProductFilter : IFilter<Product>
     {

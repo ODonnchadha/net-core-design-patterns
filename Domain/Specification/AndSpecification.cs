@@ -1,6 +1,6 @@
-﻿using Domain.Specification.Interfaces;
+﻿using Pattern.Domain.Specification.Interfaces;
 
-namespace Domain.Specification
+namespace Pattern.Domain.Specification
 {
     public class AndSpecification<T> : ISpecification<T>
     {

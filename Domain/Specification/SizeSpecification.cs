@@ -1,7 +1,7 @@
-﻿using Domain.Specification.Interfaces;
-using Domain.Specification.Models;
+﻿using Pattern.Domain.Specification.Interfaces;
+using Pattern.Domain.Specification.Models;
 
-namespace Domain.Specification
+namespace Pattern.Domain.Specification
 {
     public class SizeSpecification : ISpecification<Product>
     {

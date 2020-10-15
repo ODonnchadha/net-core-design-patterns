@@ -1,10 +1,10 @@
-﻿using Domain.Specification;
-using Domain.Specification.Filters;
-using Domain.Specification.Models;
+﻿using Pattern.Domain.Specification;
+using Pattern.Domain.Specification.Filters;
+using Pattern.Domain.Specification.Models;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace NUnitTest
+namespace Domain.NUnitTest
 {
     public class DomainSpecificationShould
     {

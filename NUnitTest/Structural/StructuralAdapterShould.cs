@@ -24,7 +24,6 @@ namespace Structural.NUnitTest
                 new Rectangle(3, 3, 6, 6),
                 new Rectangle(3, 3, 6, 6)
             };
-
         }
 
         [Test()]

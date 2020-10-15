@@ -1,4 +1,4 @@
-﻿namespace Domain.Specification.Models
+﻿namespace Pattern.Domain.Specification.Models
 {
     public enum Color
     {
