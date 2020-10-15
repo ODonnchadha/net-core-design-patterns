@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{9FCAF2CD-8BBE-42F8-9F84-43B496EB97E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern.Creational", "Creational\Pattern.Creational.csproj", "{DA7FEDAE-2471-45B6-9DB6-354539DDC0BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern.Creational", "Pattern.Creational\Pattern.Creational.csproj", "{DA7FEDAE-2471-45B6-9DB6-354539DDC0BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern.Domain", "Domain\Pattern.Domain.csproj", "{C3AF8E7F-8249-4E7F-A946-D36386E5EBBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern.Domain", "Pattern.Domain\Pattern.Domain.csproj", "{C3AF8E7F-8249-4E7F-A946-D36386E5EBBE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern.Structural", "Pattern.Structural\Pattern.Structural.csproj", "{0641025C-B2CE-45C6-8FE4-403F1E781E2F}"
 EndProject

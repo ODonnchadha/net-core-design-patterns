@@ -16,6 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Creational\Pattern.Creational.csproj" />
     <ProjectReference Include="..\Domain\Pattern.Domain.csproj" />
+    <ProjectReference Include="..\Pattern.Creational\Pattern.Creational.csproj" />
+    <ProjectReference Include="..\Pattern.Domain\Pattern.Domain.csproj" />
     <ProjectReference Include="..\Pattern.Structural\Pattern.Structural.csproj" />
     <ProjectReference Include="..\Structural\Pattern.Structural.csproj" />
   </ItemGroup>

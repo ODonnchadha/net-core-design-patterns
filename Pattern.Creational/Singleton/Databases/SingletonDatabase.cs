@@ -27,7 +27,7 @@ namespace Pattern.Creational.Singleton.Databases
             //);
 
             this.capitals = File.ReadAllLines(
-                @"C:\ODonnchadha\net-core-design-patterns\Creational\Singleton\Databases\capitals.txt").Batch(2).ToDictionary(
+                @"C:\ODonnchadha\net-core-design-patterns\Pattern.Creational\Singleton\Databases\capitals.txt").Batch(2).ToDictionary(
                 list => list.ElementAt(0).Trim(),
                 list => int.Parse(list.ElementAt(1))
             );

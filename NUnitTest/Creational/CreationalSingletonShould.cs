@@ -1,10 +1,9 @@
 ﻿using Autofac;
+using NUnit.Framework;
 using Pattern.Creational.Singleton;
 using Pattern.Creational.Singleton.Databases;
 using Pattern.Creational.Singleton.Interfaces;
-using NUnit.Framework;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 
 namespace Creational.NUnitTest
 {
