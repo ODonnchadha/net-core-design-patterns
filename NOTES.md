@@ -74,6 +74,8 @@
 			1. High-level modules should not depend upon low-level modules. Use abstractions.
 
 
+## Creational
+
 - Builder:
 	- When construction gets a little too complicated.
 	- Some objects are simple and can be created in a single constructor call.
@@ -179,3 +181,13 @@
 		2. Singletons are difficult to test.
 		3. Instead of directly using a singleton, consider depending on an abstraction.
 		4. Consider defining singleton lifetime in a DI container.
+
+
+## Structural
+
+- Adapter:
+	- Getting the interface you want from the interface you have. e.g.: An adapter with the associated different power requirements.
+	- A construct which adapts an existing interface X to conform to the required interface Y.
+	- e.g.: A simple drawing application. Drawing pixels. With a DrawPoint(Point) method. And now vertor is introduced. Vectors are a collection of lines.
+	- We need to adapt a given line into a set of points. An adapter can generate a lot of unnecessary information.
+	- Adapter caching.
