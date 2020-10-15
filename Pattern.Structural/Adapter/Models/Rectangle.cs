@@ -1,4 +1,4 @@
-﻿namespace Structural.Adapter.Models
+﻿namespace Pattern.Structural.Adapter.Models
 {
     public class Rectangle : Vector
     {

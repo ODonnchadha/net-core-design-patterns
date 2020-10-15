@@ -1,7 +1,7 @@
-﻿using Structural.Adapter.Interfaces;
-using Structural.Adapter.Models;
+﻿using Pattern.Structural.Adapter.Interfaces;
+using Pattern.Structural.Adapter.Models;
 
-namespace Structural.Adapter.Managers
+namespace Pattern.Structural.Adapter.Managers
 {
     public class PointManager : IDrawPoint
     {

@@ -1,8 +1,8 @@
-﻿using Structural.Adapter.Models;
+﻿using Pattern.Structural.Adapter.Models;
 using System;
 using System.Collections.ObjectModel;
 
-namespace Structural.Adapter
+namespace Pattern.Structural.Adapter
 {
     public class LineToPointAdapter : Collection<Point>
     {

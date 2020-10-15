@@ -190,4 +190,9 @@
 	- A construct which adapts an existing interface X to conform to the required interface Y.
 	- e.g.: A simple drawing application. Drawing pixels. With a DrawPoint(Point) method. And now vertor is introduced. Vectors are a collection of lines.
 	- We need to adapt a given line into a set of points. An adapter can generate a lot of unnecessary information.
-	- Adapter caching.
+	- Adapter caching. Preserve information stored for future use. Use GetHashCode(). Avoid regeneration.
+	- Summary:
+		1. Implementing an adapter is easy.
+		2. Determine the API you have and the API you need.
+		3. Create a component which aggregates (has a reference to, ...) the adaptee.
+		4. Intermediate representations can pile up; use caching and other optimizations.
