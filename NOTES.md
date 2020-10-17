@@ -211,3 +211,13 @@
 		1. Decouple abstraction from implementation.
 		2. Both can exist as hierarchies.
 		3. A stronger form of encapsulation. Less state explosion.
+
+- Composite:
+	- Treating individual and aggregate objects uniformily.
+	- Objects use other objects' fields, properties, and members through inheritance and composition.
+	- Composition lets us make compound objects.
+		- e.g.: mathematical expression composed of simple expressions; or
+		- A grouping of shapes that consist of several shapes.
+		- Composite design pattern is used to treat both single (scalar) abd somposite objects uniformly.
+			- e.g.: Foo and ICollection<Foo> have common APIs.
+	- A mechanism for treating individual (scalar) objects and compositions of bjects in a uniform manner.
