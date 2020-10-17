@@ -10,11 +10,6 @@ namespace NUnitTest.Structural
     {
         IRenderer renderer;
 
-        [SetUp()]
-        public void Setup()
-        {
-        }
-
         [Test()]
         public void CircleRenderer()
         {

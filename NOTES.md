@@ -220,4 +220,13 @@
 		- A grouping of shapes that consist of several shapes.
 		- Composite design pattern is used to treat both single (scalar) abd somposite objects uniformly.
 			- e.g.: Foo and ICollection<Foo> have common APIs.
-	- A mechanism for treating individual (scalar) objects and compositions of bjects in a uniform manner.
+	- A mechanism for treating individual (scalar) objects and compositions of objects in a uniform manner.
+	- Machine learning and Neuron Networks. 
+	- Nerons can connect to other Neurn and can connect to Neuron "layers" (collection of Neurons.)
+	- We need an extension method. So we treat *everything* like a collection. So every scalar values are treaded as composite values.
+	- Summary:
+		- Objects can use other object via inheritance/composition.
+		- Some composed and singular objects need similar =/identical behavors.
+		- Composite design pattern lets us treat both types of objects uniformly.
+		- C# has special support for the enumeration concept.
+		- A single object can masquerade as a collection with *yield return this*.

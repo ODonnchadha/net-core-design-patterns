@@ -7,11 +7,6 @@ namespace NUnitTest.Creational
 {
     public class CreationalFactoryShould
     {
-        [SetUp()]
-        public void Setup()
-        {
-        }
-
         [Test()]
         public void BuildCartesianPoint()
         {

@@ -6,11 +6,6 @@ namespace NUnitTest.Creational
 {
     public class CreationalPrototypeShould
     {
-        [SetUp()]
-        public void Setup()
-        {
-        }
-
         [Test()]
         public void CopyConstructorPrototype()
         {

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Structural.Composite.Models
+namespace Pattern.Structural.Composite
 {
-    public class Graph
+    public class GraphComposite
     {
-        private Lazy<List<Graph>> children = new Lazy<List<Graph>> { };
+        private Lazy<List<GraphComposite>> children = new Lazy<List<GraphComposite>> { };
         public virtual string Name { get; set; } = "Group";
         public string Color;
-        public List<Graph> Children => children.Value;
+        public List<GraphComposite> Children => children.Value;
 
         private void Print(StringBuilder builder, int depth)
         {
