@@ -230,3 +230,43 @@
 		- Composite design pattern lets us treat both types of objects uniformly.
 		- C# has special support for the enumeration concept.
 		- A single object can masquerade as a collection with *yield return this*.
+
+- Decorator:
+	- Adding behavior without altering the class itself.
+	- Motivation:
+		1. Want to augment an object with additional fucntionality.
+		2. Do not want to rewrite or alter existing code. (OCP.)
+		3. Want to keep new functionality seperate. (SRP.)
+		4. Need to be able to interact with existing structures.
+		5. Two options:
+			- Inherit from the required object if possible. (Not sealed.)
+			- Build a decorator which simly references the decorated objects.
+	- Decorator facilitates the addition of behaviors to individual objects without inheriting from them.
+	- So, a decorator around a sealed class. e.g.: Stringbuilder(); Beware the fluent interface.
+	- The vaunted decorator/adapter pattern. Real life: "Hello World." Inefficient string management. 
+	- Stringbuilder with implecient string concatanation. e.g.: support s += "";
+	```csharp
+	public class MyStringBuilder
+	{
+		private StringBuilder sb = new StringBuilder {};
+		public static implicit operator MyStringBuilder(string str)
+		{
+			var msb = new MyStringBuilder {};
+			msb.Append(str);
+			return msb;
+		}
+		public static MyStringBuilder operator +(MyStringBuilder msb, string str)
+		{
+			msb.Append(str);
+			return msb;
+		}
+		public override string ToString()
+		{
+			return sb.ToString();
+		}
+	}
+
+	MyStringBuilder s = "Hello ";
+	s += "World";
+
+	```
