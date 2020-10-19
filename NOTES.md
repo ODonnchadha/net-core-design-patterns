@@ -265,8 +265,7 @@
 			return sb.ToString();
 		}
 	}
-
 	MyStringBuilder s = "Hello ";
 	s += "World";
-
 	```
+	- Multiple inheritance.
