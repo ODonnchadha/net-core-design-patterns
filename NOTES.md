@@ -269,3 +269,26 @@
 	s += "World";
 	```
 	- Multiple inheritance.
+		- Tough to emulate. 
+		- A dragon is both a bird and a lizard. So we use interfaces. And contstructer inject to objects. And then delegate.
+		```csharp
+		public interface IFly { void Fly(); }
+		public interface ICrawl { void Crawl(); }
+		public class Bird: IFly { public void Fly() { WriteLine("I fly."); }}
+		public class Lizard: ICrawl { public void Crawl() { WriteLine("I crawl."); }}
+		public class Dragon: ICrawl, IFly
+		{
+			private readonly Bird bird;
+			private readonly Lizard lizard;
+			public Dragon(Bird bird, Lizard lizard) { this.bird = bird; this.lizard = lizard; }
+			public void Crawl() { lizard.Fly(); }
+			public void Fly() { bird.Fly(); }
+		}
+		```
+		- Simple example. But... both bird and lizard implement a weight property that is part of the interface
+		- Explicit implementation. e.g.: int IBird.Weight and int ILizard.Weight.
+		- "The modifier 'public' is not valid for explicit implementation." 
+		- So you can create it yourself and it will satidfy the interface. But the setter is incorrect.
+		
+	- Composible Decorator. 
+		- Dynamic versus Static. Static is not too great in the .NET framework.
